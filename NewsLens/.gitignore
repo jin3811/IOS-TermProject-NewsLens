@@ -1,2 +1,5 @@
 # api key 보관
 /**/Secrets.xcconfig
+
+# firebase credential file
+GoogleService-Info.plist
