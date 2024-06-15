@@ -5,7 +5,7 @@ from firebase_admin import firestore
 cred = firebase_admin.credentials.Certificate("firebase-credential.json")
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
-collection = "news_summary"
+collection = "news"
 
 def upload(data : {str: str}) -> bool:
     id = f"{data["date"]}-{data["title"]}"

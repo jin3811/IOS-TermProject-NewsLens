@@ -17,7 +17,7 @@ def summary(msg : str) -> str :
             model="gpt-3.5-turbo",
             messages=[
                 { "role": "system", "content": system_instruction },
-                { "role" : "user" , "content" : msg }
+                { "role" : "user", "content" : msg }
             ],
             temperature=0.3,
             max_tokens=len(msg)//2
